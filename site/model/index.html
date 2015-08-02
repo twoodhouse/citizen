@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Model - CITIZEN Documentation</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../index.html">CITIZEN Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../index.html">Home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../overview/index.html">Overview</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../theme/index.html">Theme</a>
+                </li>
+            
+            
+            
+                <li class="active">
+                    <a href="index.html">Model</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../rules/index.html">Rules</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../theme/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../rules/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#model">Model</a></li>
+        
+            <li><a href="#requirements">Requirements</a></li>
+        
+            <li><a href="#analysis">Analysis</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="model">Model</h1>
+<p>The bare-bones model of a game is the first portion which must be designed. It is the foundation by which players will either enjoy the game or find it ignorable.</p>
+<p>The best approach in designing the model for a game is to specify the requirements which must be met for the game to achieve success. This method will hold true for the following documentation, with CITIZEN's solution to these problems detailed accordingly.</p>
+<h2 id="requirements">Requirements</h2>
+<h4 id="must-requirements">MUST requirements:</h4>
+<p>The ultimate MUST is that the game must be fun. It is believed that these elements are primary in achieving such a goal.</p>
+<ol>
+<li>The game must be simple to play.</li>
+<li>The game must have clear goals for each player.</li>
+<li>The game must not take longer than an hour.</li>
+<li>The game must allow the chance for inexperienced players to win.</li>
+<li>The game must allow for simple strategic optimization.</li>
+<li>The game must be flexible enough to deal with various numbers of players with only small changes.</li>
+<li>The game must hold a theme which correlates closely with gameplay.</li>
+</ol>
+<h4 id="desired-requirements">DESIRED requirements:</h4>
+<ol>
+<li>The game should avoid presenting chance explicitly as an important game element.</li>
+<li>The game should not allow for the <a href="https://en.wikipedia.org/wiki/Kingmaker_scenario">Kingmaker scenario</a>.</li>
+<li>The game should hold strategic complexity which surpasses human ability to perfectly solve.</li>
+<li>The game should follow a model wherein the rate of increasing win percentage exponentially decreases as gameplay experience is gained.</li>
+</ol>
+<h2 id="analysis">Analysis</h2>
+<h4 id="simplicity">Simplicity</h4>
+<p>CITIZEN is designed to be based on a very simple gameplay model. The rules can be compressed easily with few caveats.
+For example, if explaining the game to new players, it might go as follows:</p>
+<ul>
+<li>"We are all traders in the outer realm of space trying to buy citizenship. That means that you will be buying supplies and gaining special abilities based on the supplies you have."</li>
+<li>"During a round, when it it your turn, place one of your money cards face down on a merchant. You need to play a card on each merchant before you can play a second card on any merchant. Once all cards have been played, you will get to choose a supply from one merchant where you paid more than other players!"</li>
+<li>"Look at the combination of materials you have and check the boards to see what special ability you get for the next round."</li>
+<li>"During the final round, the player who outbids the next highest player by the greatest amount (on any merchant) wins their citizenship and the game is over."</li>
+</ul>
+<p>One beauty of CITIZEN is that simplicity is not sacrificed on the altar of strategic complexity. This is achieved by encapsulating simple exterior rules on the special ability boards. These abilities are not necessary to know in order to have a basic understanding of the game. Similarly, these external rules are designed so that there can be no confusion over their usage.</p>
+<h4 id="goals">Goals</h4>
+<p>The depth of strategic paths in CITIZEN is rich, which can often be confusing to players which do not know how to start. For this reason, the "Empire Merchant" was developed, which sets up a good bidding goal for players who do not have experience with the game. (If you have not read the rules yet: the Empire Merchant grants an extra money card to the player who wins that specific merchant during the round).  </p>
+<h4 id="game-length">Game Length</h4>
+<p>The game lasts 45 minutes when an average amount of discussion is happening. It can be as short as 25 minutes when players are new to the game or do not use much relational strategy.</p>
+<p>One neat part about learning this game is that there is always a new thing to try for the next time around. Aiming for new and different raw materials in your cargo hold proves to be very enjoyable because you get to test out a new strategy each game. Relatively short game times (30 minutes) are optimal for this model.</p>
+<h4 id="chance">Chance</h4>
+<p>There is no explicit inclusion of chance into the CITIZEN model. This requirement is on account of highly analytical people who dislike games including chance.</p>
+<p>The game includes no more chance than does chess or checkers. However - people are unpredictable. The element of secret player decisions simulates chance effectively so that the game model is not broken. See the following discussion on the Kingmake scenario.</p>
+<h4 id="the-kingmaker-scenario">The Kingmaker Scenario</h4>
+<p>Game theory tells us that determinism in a multiplayer game leads to the Kingmaker scenario - when a player realizes they are unable to win, they may break the game by helping another player.</p>
+<p>This problem of determinism and the Kingmaker scenario is solved by way of player-oriented chance and the strategic complexity. In CITIZEN, all cards are played face-down, which provides the element of player-oriented chance. Consider the senario where a player has two card in his hand, and I know what both of them are. If he plays one card onto a merchant, I cannot know which card he played. Though there is no institutionalized chance in this decision, the effective result of putting secret decisions into the hands of players is the same as if a die were rolled or a deck was shuffled. In many ways, this sort of chance is much better than explicit game chance because most players think they are good at predicting the decisions of others, even though they are not.</p>
+<p>By effectively reintroducing chance into the game through player decision, the Kingmaker scenario is avoided. Of course, this solution only applies as long as there is a chance for every player to win during the final round. This design point is the most innovative portion of CITIZEN's architecture. Players will progress during each round, even if they play poorly. The special abilities and money cards are balanced so that every player has the potential ability to win during the final round if they are able to convice other players to play cards in certain ways. Abilities that are detrimental to single players are designed to be very limited in their effectivity so that players are not able to gang up on one person. These elements, when combined, fully solve the Kingmaker scenario.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>

@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: CITIZEN Documentation
+pages:
+  - Home: index.md
+  - Overview: overview.md
+  - Theme: theme.md
+  - Model: model.md
+  - Rules: rules.md
+theme: spacelab
+use_directory_urls: false
